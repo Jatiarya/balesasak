@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bale Sasak</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
+    <script src="main.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="/node_modules/sweetalert2/dist/sweetalert2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="Beranda">
+      <nav>
+        <div class="logo">
+          <h1>Bale Sasak</h1>
+        </div>
+
+        <ul>
+          <li><a href="#Beranda">Beranda</a></li>
+          <li><a href="#Makanan">Makanan</a></li>
+          <li><a href="#Minuman">Minuman</a></li>
+          <li><a href="#Jajanan">Jajanan</a></li>
+          <li>
+            <a href="#Order"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="main">
+        <div class="men_text">
+          <h1>Makanan Khas<br /><span>Lombok</span></h1>
+        </div>
+
+        <div class="main_image">
+          <img src="/source/hero.png" />
+        </div>
+      </div>
+
+      <p>
+        Website ini menyajikan informasi lengkap tentang makanan khas Lombok,
+        mulai dari ayam taliwang hingga plecing kangkung. Temukan keunikan cita
+        rasa tradisional yang autentik, sejarah setiap hidangan, serta
+        rekomendasi tempat terbaik untuk mencicipi kuliner asli Lombok yang kaya
+        rempah dan penuh kenikmatan.
+      </p>
+
+      <div class="main_btn">
+        <a href="#Makanan">Kepoin</a>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </section>
+    <!--Makanan-->
+
+    <div class="makanan" id="Makanan">
+      <h1>Menu<span>Makanan Kami</span></h1>
+
+      <div class="menu_box">
+        <div class="menu_card">
+          <div class="menu_image">
+            <img
+              src="source/makanan/Ayam-Taliwang-Khas-Lombok.jpg"
+              alt="Ayam Taliwang"
+            />
+          </div>
+          <div class="menu_info">
+            <h2>Ayam Taliwang</h2>
+            <p>Ayam Taliwang: Hidangan khas Lombok.</p>
+            <h3>Rp.55.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Ayam Taliwang', 'Ayam Taliwang adalah hidangan khas Lombok yang terbuat dari ayam yang dibakar dengan bumbu khas yang kaya rasa. Pertama, ayam dipotong menjadi beberapa bagian dan diberi bumbu halus yang terbuat dari bawang merah, bawang putih, cabai merah, tomat, kemiri, terasi, dan garam. Setelah bumbu tercampur rata, ayam dibakar di atas arang hingga matang sempurna, sambil sesekali diolesi dengan bumbu yang tersisa. Untuk memberikan cita rasa yang khas, ayam Taliwang sering disajikan dengan sambal terasi dan nasi putih, serta sayur plecing kangkung sebagai pelengkap. Hidangan ini memiliki rasa pedas, gurih, dan sedikit asam, yang menjadikannya lezat dan menggugah selera.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/makanan/plecing-lombok.jpeg" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Pelcing</h2>
+            <p>"Salad" Khas Lombok</p>
+            <h3>Rp.10.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Pelcing', 'Plecing kangkung adalah salah satu hidangan khas Lombok yang terbuat dari kangkung yang direbus dan disajikan dengan sambal terasi pedas. Untuk membuatnya, pertama-tama cuci bersih kangkung dan rebus dalam air mendidih selama beberapa menit hingga layu. Setelah itu, tiriskan dan susun kangkung di atas piring. Untuk sambal, haluskan cabai merah, cabai rawit, tomat, terasi bakar, bawang putih, dan garam. Tambahkan sedikit air jeruk nipis untuk memberikan rasa segar dan asam. Sambal ini dituangkan di atas kangkung rebus, dan plecing kangkung siap disajikan sebagai pelengkap yang segar dan pedas.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/makanan/sate.jpg" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Sate Rembige</h2>
+            <p>Sate tusuk bakar khas Lombok</p>
+            <h3>Rp.30.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Sate Rembige', 'Sate Rembige adalah sate khas Lombok yang terbuat dari daging sapi yang dipotong kecil-kecil dan dibumbui dengan rempah khas. Untuk membuatnya, daging sapi dipotong tipis dan kecil-kecil, lalu direndam dalam bumbu marinasi yang terdiri dari bawang merah, bawang putih, cabai merah, terasi, kecap manis, air asam jawa, garam, dan gula merah. Setelah itu, tusukkan potongan daging ke tusukan sate dan panggang di atas bara api hingga matang, sambil sesekali diolesi dengan bumbu yang tersisa. Sate Rembige sering disajikan dengan sambal kecap, yang terbuat dari kecap manis, bawang merah, cabai rawit, dan irisan tomat. Rasanya pedas, manis, dan gurih, menjadikannya hidangan yang nikmat dan menggugah selera.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/makanan/sop konro kuah.JPG" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Sop Iga</h2>
+            <p>Sop khas lombok yang berbahan utama dari iga sapi</p>
+            <h3>Rp.55.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Sop Iga', 'Sop Iga Lombok adalah sup yang terbuat dari iga sapi yang dimasak dengan bumbu khas Lombok, memberikan cita rasa pedas dan segar. Untuk membuatnya, pertama-tama rebus iga sapi dalam air mendidih hingga empuk. Sementara itu, haluskan bumbu yang terdiri dari bawang merah, bawang putih, cabai merah, cabai rawit, jahe, kunyit, kemiri, dan terasi. Tumis bumbu halus dengan sedikit minyak hingga harum, lalu masukkan ke dalam panci bersama iga yang sudah direbus. Tambahkan air, garam, dan gula merah, lalu masak hingga bumbu meresap dan kuah sop menjadi gurih. Setelah iga empuk dan bumbu matang, sajikan sop iga dengan taburan daun bawang dan irisan tomat segar. Sop Iga Lombok ini memiliki rasa pedas, segar, dan kaya rempah, cocok disantap bersama nasi putih.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/makanan/nasibalap.jpg" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Nasi Balap</h2>
+            <p>Nasi campur khas Lombok</p>
+            <h3>Rp.16.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Nasi Balap Puyung', 'Nasi Balap Puyung adalah hidangan khas Lombok yang terbuat dari nasi yang disajikan dengan lauk-pauk seperti ayam suwir, sate, dan sambal, dengan cita rasa pedas dan gurih. Untuk membuatnya, pertama-tama masak nasi putih hingga matang. Sementara itu, siapkan ayam yang telah direbus, lalu suwir-suwir daging ayamnya. Untuk sambal, haluskan cabai merah, cabai rawit, bawang merah, bawang putih, tomat, terasi, dan garam. Tumis sambal tersebut hingga harum dan matang. Setelah itu, sajikan nasi putih dengan suwiran ayam di atasnya, lalu siram dengan sambal yang sudah dimasak. Untuk pelengkap, tambahkan sate ayam atau sate rembige dan beberapa potong tempe goreng. Nasi Balap Puyung siap disajikan dengan rasa pedas, gurih, dan sedikit manis dari bumbu yang meresap.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <!-- Tambahkan menu_card lainnya di sini -->
+      </div>
+    </div>
+    <div class="minuman" id="Minuman">
+      <h1>Menu<span>Minuman Kami</span></h1>
+
+      <div class="menu_box">
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/minuman/Es Dawet.jpg" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Es Dawet</h2>
+            <p>Es Dawet Khas Lombok</p>
+            <h3>Rp.10.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Es Dawet Lombok', 'Es Dawet Lombok adalah minuman khas yang menyegarkan dengan campuran dawet (cendol) yang kenyal, santan, dan gula merah cair. Untuk membuatnya, pertama-tama buat cendol atau dawet dengan cara mencampurkan tepung beras, air daun pandan, air daun suji, dan sedikit air kapur sirih. Rebus adonan hingga mengental, lalu masukkan ke dalam cetakan cendol dan tekan hingga menghasilkan potongan-potongan kecil dawet. Sementara itu, siapkan gula merah yang sudah disisir halus, lalu cairkan dengan sedikit air hingga menjadi sirup gula merah. Campurkan santan kental dengan sedikit garam untuk menambah rasa gurih. Untuk penyajian, masukkan es batu serut ke dalam gelas, tambahkan cendol, siram dengan sirup gula merah, dan tuangkan santan di atasnya. Es Dawet Lombok siap disajikan, memberikan sensasi segar, manis, dan gurih yang nikmat.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img
+              src="source/minuman/Es Sarang Burung.jpg"
+              alt="Ayam Taliwang"
+            />
+          </div>
+          <div class="menu_info">
+            <h2>Es Sarang Burung</h2>
+            <p>Es sarang burung khas Lombok</p>
+            <h3>Rp.11.500</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Es Sarang Burung', 'Es Sarang Burung khas Lombok adalah minuman segar yang terkenal dengan cita rasa manis dan tekstur unik. Untuk membuatnya, siapkan bahan utama seperti agar-agar bening yang diparut halus menyerupai sarang burung, kelapa muda yang diserut, biji selasih yang sudah direndam, dan sirup gula merah. Campurkan semua bahan ke dalam mangkuk besar, tambahkan santan cair yang sudah dimasak bersama daun pandan dan sedikit garam untuk rasa gurih. Sajikan dalam gelas dengan es serut atau es batu, lalu tambahkan sirup gula merah secukupnya sebagai pemanis. Es Sarang Burung ini sempurna dinikmati saat cuaca panas!.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img
+              src="source/minuman/Es Kopi Machiato.jpg"
+              alt="Ayam Taliwang"
+            />
+          </div>
+          <div class="menu_info">
+            <h2>Es Kopi Gula Aren</h2>
+            <p>Es Kopi Gula Aren Khas Lombo</p>
+            <h3>Rp.15.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Es Kopi Gula Aren', 'Es Kopi Gula Aren Khas Lombok adalah minuman nikmat dengan rasa manis alami dari gula aren dan aroma kopi yang khas. Untuk membuatnya, siapkan bahan-bahan berikut: 1 shot espresso atau kopi hitam kental, 2-3 sdm gula aren cair (rebus gula aren dengan sedikit air hingga larut), 100 ml susu segar atau santan cair, dan es batu secukupnya.Langkah pembuatan: Dalam gelas tinggi, tuangkan gula aren cair di dasar gelas. Tambahkan es batu hingga penuh, lalu tuangkan susu atau santan cair secara perlahan agar membentuk lapisan. Terakhir, tuangkan espresso di atasnya. Sajikan dengan sedotan, dan nikmati perpaduan rasa manis, gurih, dan pahit yang sempurna. Cocok untuk menyegarkan hari!')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/minuman/Serbat Jahe.jpg" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Serbat Jahe</h2>
+            <p>Jamu Khas Lombok</p>
+            <h3>Rp.12.500</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Serbat Jahe', 'Serbat Jahe Khas Lombok adalah minuman tradisional hangat yang kaya akan rempah dan cocok untuk menghangatkan tubuh. Untuk membuatnya, siapkan bahan-bahan berikut: 200 gram jahe, 100 gram gula merah, 2 sdm gula pasir (opsional), 1 liter air, 2 batang serai, 3 lembar daun pandan, 2 butir cengkeh, dan 1 batang kayu manis. Langkah pembuatan: Kupas jahe, cuci bersih, lalu geprek. Rebus air bersama jahe, serai yang telah digeprek, daun pandan, cengkeh, dan kayu manis. Masukkan gula merah dan gula pasir, aduk hingga larut. Masak hingga aroma rempah keluar dan air berkurang sedikit. Saring serbat ke dalam gelas dan sajikan hangat. Minuman ini cocok untuk dinikmati saat hujan atau malam hari.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="jajanan" id="Jajanan">
+      <h1>Menu<span>Jajanan Kami</span></h1>
+
+      <div class="menu_box">
+        <div class="menu_card">
+          <div class="menu_image">
+            <img
+              src="source/jajanan/6f9348c6-6671-4370-a30e-0b662a261edb.jpg"
+              alt="Ayam Taliwang"
+            />
+          </div>
+          <div class="menu_info">
+            <h2>Kue Lopis</h2>
+            <p>Kue Khas Lombok yang bernama Kue Lopis</p>
+            <h3>Rp.15.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Kue Lopis', 'Kue Lopis Khas Lombok adalah jajanan tradisional berbahan dasar beras ketan yang direndam, dicampur garam, lalu dibungkus daun pisang dan direbus selama 2-3 jam hingga matang. Setelah matang, lopis dibuka dari bungkusnya dan digulingkan ke kelapa parut yang sudah dikukus dengan sedikit garam. Untuk sirup gula merah, gula merah direbus bersama air dan daun pandan hingga larut dan mengental. Lopis kemudian disajikan dengan siraman sirup gula merah, menciptakan perpaduan rasa manis dan gurih yang sempurna. Nikmat dinikmati sebagai camilan tradisional yang sederhana namun lezat!.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img
+              src="source/jajanan/Kelepon Kecerit, Khas Lombok.jpg"
+              alt="Ayam Taliwang"
+            />
+          </div>
+          <div class="menu_info">
+            <h2>Kelpon Kecrit</h2>
+            <p>Kue Kelpon kecrit khas Lombok</p>
+            <h3>Rp.15.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep kelpon kecrit', 'Klepon Kecrit adalah jajanan tradisional kecil khas Lombok yang kenyal dan manis. Dibuat dari campuran tepung ketan, tepung beras, garam, dan air hangat yang diuleni hingga kalis, adonan kemudian dibentuk bola kecil dengan isian gula merah di tengahnya. Bola-bola klepon ini direbus dalam air mendidih hingga mengapung, lalu digulingkan ke kelapa parut yang sudah dikukus dengan sedikit garam. Rasanya yang manis legit dengan tekstur kenyal membuat Klepon Kecrit cocok sebagai camilan sederhana yang lezat, terutama jika dinikmati dengan minuman hangat.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/jajanan/Kue Keciput.jfif" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Kue Keciput</h2>
+            <p>Kue Keciput Khas Lombok</p>
+            <h3>Rp.33.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Kue Keciput', 'Kue Keciput adalah camilan tradisional renyah yang terbuat dari campuran tepung ketan, tepung beras, gula halus, telur, santan, dan baking powder yang diuleni hingga kalis. Adonan dibentuk bulatan kecil, dicelupkan ke air atau santan encer, lalu digulingkan dalam wijen hingga rata. Setelah itu, keciput digoreng dalam minyak panas dengan api kecil hingga mengembang dan berwarna keemasan. Hasilnya adalah kue kecil yang renyah, manis, dan gurih, cocok sebagai teman minum teh atau camilan di waktu santai.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="source/jajanan/Kue Kerake.jfif" alt="Ayam Taliwang" />
+          </div>
+          <div class="menu_info">
+            <h2>Dodol Tradisional</h2>
+            <p>Dodol Tradisional Khas Lombok</p>
+            <h3>Rp.27.000</h3>
+            <button
+              class="menu_btn"
+              onclick="showPopup('Resep Dodol', 'Dodol khas Lombok adalah camilan manis dengan tekstur kenyal yang terbuat dari campuran bahan tradisional. Untuk membuatnya, siapkan 500 gram tepung ketan, 1 liter santan kental, 300 gram gula merah yang telah disisir, 200 gram gula pasir, dan 1/4 sdt garam. Campurkan tepung ketan, santan, dan garam dalam wajan besar, aduk hingga larut. Masukkan gula merah dan gula pasir, lalu masak dengan api kecil sambil terus diaduk agar tidak gosong. Proses pengadukan dilakukan hingga adonan berubah warna menjadi cokelat gelap, pekat, dan kenyal. Setelah matang, tuang adonan ke dalam loyang yang telah diolesi minyak, biarkan dingin, lalu potong-potong sesuai selera. Dodol Lombok ini memiliki rasa manis legit dan tahan lama, cocok untuk sajian khas atau oleh-oleh tradisional.')"
+            >
+              Lihat Resep
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup-overlay" id="popup-overlay">
+      <div class="popup">
+        <button class="close-btn" onclick="closePopup()">&times;</button>
+        <h2 id="popup-title">Title</h2>
+        <p id="popup-content">Content</p>
+      </div>
+    </div>
+
+    <!-- Pop Up -->
+    <div class="popup-overlay" id="popup">
+      <div class="popup-content">
+        <button class="popup-close" id="close-popup">Tutup</button>
+        <h2>Resep Makanan</h2>
+        <p id="popup-recipe"></p>
+      </div>
+    </div>
+
+    <!--Gallary-->
+
+    <div class="gallary" id="Gallary">
+      <h1>Semua<span>Menu</span></h1>
+
+      <div class="gallary_image_box">
+        <div class="gallary_image">
+          <img src="/source/makanan/Ayam-Taliwang-Khas-Lombok.jpg" />
+
+          <h3>Ayam Taliwang</h3>
+          <p>
+            Ayam Taliwang: Hidangan khas Lombok, ayam bakar berbumbu pedas gurih
+            dengan rempah khas dan sambal tomat.
+          </p>
+        </div>
+
+        <div class="gallary_image">
+          <img src="/source/makanan/sate.jpg" />
+
+          <h3>Sate Rembige</h3>
+          <p>
+            Sate Rembige: Sate daging sapi khas Lombok, berbumbu manis pedas,
+            dipanggang hingga harum dan juicy.
+          </p>
+        </div>
+
+        <div class="gallary_image">
+          <img src="/source/makanan/plecing-lombok.jpeg" />
+
+          <h3>Pelcing</h3>
+          <p>
+            Pelcing adalah makanan khas Lombok berupa kangkung rebus segar,
+            disajikan dengan sambal tomat pedas, kacang goreng, dan perasan
+            jeruk limau.
+          </p>
+        </div>
+
+        <div class="gallary_image">
+          <img src="/source/jajanan/6f9348c6-6671-4370-a30e-0b662a261edb.jpg" />
+
+          <h3>Kue Lopis</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+        </div>
+
+        <div class="gallary_image">
+          <img src="/source/jajanan/Kelepon Kecerit, Khas Lombok.jpg" />
+
+          <h3>Kelpon Kecrit</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+        </div>
+
+        <div class="gallary_image">
+          <img src="/source/minuman/Es Dawet.jpg" />
+
+          <h3>Es Dawet</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Review-->
+    <!-- <div class="review" id="Review">
+      <h1>Customer<span>Review</span></h1>
+
+      <div class="review_box">
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_1.png" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">John Deo</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_2.png" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">John Deo</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_3.png" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">John Deo</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_4.png" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">John Deo</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Repellendus quam facere blanditiis in fugiat tempore
+              necessitatibus aliquid. Id adipisci, rem corrupti asperiores
+              distinctio delectus quae quia tenetur totam laboriosam quam. Lorem
+              ipsum, dolor sit amet consectetur adipisicing elit. Dolores soluta
+              ullam ipsa voluptates repudiandae dignissimos deleniti mollitia
+              eum. Laudantium placeat velit nemo illo pariatur. Fuga aperiam
+              impedit illo atque repellendus!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!--Order-->
+
+    <div class="order" id="Order">
+      <h1><span>Hubungi</span>Kami</h1>
+
+      <div class="order_main">
+        <div class="order_image">
+          <img src="/source/undraw_barista_wwfa.svg" />
+        </div>
+
+        <form action="#">
+          <div class="input">
+            <p>Nama</p>
+            <input type="text" placeholder="Nama" />
+          </div>
+
+          <div class="input">
+            <p>Email</p>
+            <input type="email" placeholder="Email" />
+          </div>
+
+          <div class="input">
+            <p>No.Hp</p>
+            <input placeholder="No. Handphone" />
+          </div>
+
+          <div class="input">
+            <p>Berapa</p>
+            <input type="number" placeholder="Berapa banyak pesanan" />
+          </div>
+
+          <div class="input">
+            <p>Pesananmu</p>
+            <input placeholder="Nama menu" />
+          </div>
+
+          <div class="input">
+            <p>Alamat</p>
+            <input placeholder="Alamat kamu" />
+          </div>
+
+          <a href="#" class="order_btn">Pesan Sekarang</a>
+        </form>
+      </div>
+    </div>
+
+    <!--Team-->
+
+    <!-- <div class="team">
+      <h1>Our<span>Team</span></h1>
+
+      <div class="team_box">
+        <div class="profile">
+          <img src="image/chef1.png" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="image/chef2.png" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="image/chef3.jpg" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="image/chef4.jpg" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!--Footer-->
+
+    <footer>
+      <div class="footer_main">
+        <div class="footer_tag">
+          <h2>Lokasi</h2>
+          <p>Lombok, Nusa Tenggara Barat, Indonesia</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Navigasi</h2>
+          <a href="#Beranda">Beranda</a>
+          <a href="#Makanan">Makanan</a>
+          <a href="#Minuman">Minuman</a>
+          <a href="#Jajanan">Jajanan</a>
+          <a href="#Pesan">Pesan</a>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Kontak</h2>
+          <p>+62 877-5917-6792</p>
+          <p>makanankhaslombok@gmail.com</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Layanan kami</h2>
+          <p>Pengantaran Cepat</p>
+          <p>Kemudahan Pembayaran</p>
+          <p>24 x 7 Pelayanan</p>
+        </div>
+
+        <div class="footer_tag">
+          <h2>Ikuti</h2>
+          <i class="fa-brands fa-facebook-f"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-linkedin-in"></i>
+        </div>
+      </div>
+
+      <p class="end">
+        2025 <span> Makanan Khas Lombok. </span> All Right Reserved.
+      </p>
+    </footer>
+    <script src="sweetalert2.all.min.js">
+      const resep = document.querySelector('#btn-1');
+      resep.addEventListener('click', function() {
+        Swal({
+          tittle : "Resep Ayam Taliwang",
+          text: "Lorem ipsum dolor sit amet",
+          type: "success"
+        })
+      })
+    </script>
+  </body>
+</html>
